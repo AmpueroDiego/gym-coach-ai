@@ -1,0 +1,36 @@
+/* BarraDescanso */
+.barra-descanso {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.barra-descanso .fila-descanso,
+.barra-descanso .presets-descanso {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.barra-descanso .fila-descanso button,
+.barra-descanso .presets-descanso button {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 10px;
+}
+
+/* El reloj es un botón: grande, centrado y ocupando el espacio libre. */
+.barra-descanso .fila-descanso button.reloj {
+  flex: 1;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--acento);
+}
+
+.barra-descanso .presets-descanso button {
+  flex: 1;
+}
+
+.barra-descanso .presets-descanso button[aria-pressed='true'] {
+  border-color: var(--acento);
+  color: var(--acento);
+}

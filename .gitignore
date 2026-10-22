@@ -1,0 +1,38 @@
+# Node / frontend
+node_modules/
+dist/
+build/
+.vite/
+*.tsbuildinfo
+
+# .NET
+bin/
+obj/
+*.user
+
+# Azure Functions
+local.settings.json
+.azurite/
+__azurite_db*
+__blobstorage__/
+__queuestorage__/
+
+# Secretos y entorno
+.env
+.env.*
+!.env.example
+*.http
+
+# Editor / SO
+.vs/
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# Claude local
+.claude/settings.local.json
+
+# Exportaciones personales (Hevy): datos privados, nunca al repo
+/workout_data.csv

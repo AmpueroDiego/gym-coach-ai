@@ -1,0 +1,33 @@
+.silueta { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.silueta-vistas { display: flex; gap: 8px; justify-content: center; }
+.silueta-vista { width: 120px; aspect-ratio: 1 / 2; }
+.silueta-vista .rbh-wrapper { width: 100%; height: 100%; }
+.silueta-leyenda { display: flex; flex-wrap: wrap; gap: 4px 12px; justify-content: center; font-size: 0.8rem; color: #aab2bc; }
+.silueta-leyenda span::before { content: ''; display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 4px; background: var(--c); }
+.silueta-mini { display: inline-block; width: 28px; height: 56px; flex: none; }
+.silueta-mini .rbh-wrapper { width: 100%; height: 100%; }
+.rbh polygon { pointer-events: none; }
+
+/* Hoy: la silueta mini es el botón de la ficha en la cabecera del bloque. */
+.silueta-boton {
+  flex: none;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* En la cabecera, la silueta cabe en 44 px de alto (misma forma, 1:2) para no agrandar el bloque. */
+.silueta-boton .silueta-mini {
+  width: 22px;
+  height: 44px;
+}
+.silueta-boton:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}

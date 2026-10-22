@@ -1,0 +1,433 @@
+/* Chat del coach: la lista scrollea sola y el campo queda abajo, sobre la navegación (y el descanso), para escribir con el pulgar. */
+/* `div.coach` y no `.coach`: el <li> de cada mensaje del coach también lleva la clase `coach` (mensaje coach)
+   y heredaba este min-height de una pantalla entera: cada respuesta ocupaba todo el alto y el chat se descuadraba. */
+div.coach {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  /* Llena el alto que le da la app: el campo arranca abajo aunque haya pocos mensajes. */
+  flex: 1;
+  min-height: 0;
+  min-width: 0;
+}
+
+.coach-zona {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* position: relative para que el offsetTop de los mensajes cuente desde aquí. */
+.coach-lista {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 4px 0 8px;
+}
+
+/* Espacio bajo el último mensaje para anclar el enviado arriba; lo ajusta el hook. */
+.coach-relleno {
+  flex: none;
+  height: 0;
+  overflow-anchor: none;
+}
+
+.coach-cabeza {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 4px 0;
+}
+
+.coach-cabeza h2 {
+  flex: 1;
+  font-size: 1.2rem;
+}
+
+.coach .mensajes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.coach .mensaje {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 92%;
+  min-width: 0;
+}
+
+.coach .mensaje.usuario {
+  align-self: flex-end;
+  align-items: flex-end;
+}
+
+.coach .mensaje.coach {
+  align-self: flex-start;
+}
+
+/* Texto plano tal cual llega: respeta saltos de línea y parte palabras largas en vez de desbordar. */
+.coach .burbuja {
+  margin: 0;
+  padding: 8px 12px;
+  border-radius: 16px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.35;
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+}
+
+.coach .usuario .burbuja {
+  background: var(--acento);
+  border-color: var(--acento);
+  color: var(--acento-texto);
+}
+
+.coach .fallido .burbuja {
+  opacity: 0.6;
+}
+
+.coach .consulto {
+  margin: 0;
+  padding: 0 6px;
+  color: var(--tenue);
+  font-size: 0.75rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.coach .pensando {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--tenue);
+}
+
+.coach .pensando-texto {
+  font-size: 0.9rem;
+}
+
+.coach .puntos {
+  display: inline-flex;
+  gap: 4px;
+}
+
+.coach .puntos i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  animation: rebote 1.2s infinite ease-in-out;
+}
+
+.coach .puntos i:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.coach .puntos i:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes rebote {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+  30% { transform: translateY(-4px); opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .coach .puntos i {
+    animation: none;
+    opacity: 0.7;
+  }
+}
+
+.coach .fallo {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.coach .fallo .error {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.coach .fallo button {
+  min-height: 44px;
+}
+
+.coach .sugerencias {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+}
+
+.coach .sugerencias .chip {
+  text-align: left;
+  white-space: normal;
+}
+
+.coach .aviso.sesion {
+  margin: 0;
+}
+
+.redactar {
+  flex: none;
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 8px 0 4px;
+  background: var(--fondo);
+}
+
+.redactar textarea {
+  flex: 1;
+  min-width: 0;
+  min-height: 48px;
+  /* Crece con el texto hasta 4 líneas; después, scroll dentro del campo. */
+  field-sizing: content;
+  max-height: calc(4 * 1.4em + 22px);
+  padding: 12px;
+  resize: none;
+  font: inherit;
+  line-height: 1.4;
+  color: inherit;
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 14px;
+}
+
+.redactar textarea::placeholder {
+  color: var(--tenue);
+}
+
+.redactar button {
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+  min-height: 48px;
+  min-width: 48px;
+  padding: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.redactar button svg,
+.ir-al-final svg {
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.ir-al-final {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  z-index: 2;
+  width: var(--toque);
+  height: var(--toque);
+  padding: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.35);
+}
+
+/* Punto: llegó una respuesta que no se ve. */
+.ir-al-final.con-nuevo::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--acento);
+  box-shadow: 0 0 0 2px var(--fondo);
+}
+
+.coach .mensaje.nuevo {
+  animation: entra 0.18s ease-out;
+}
+
+@keyframes entra {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .coach .mensaje.nuevo {
+    animation: none;
+  }
+}
+
+.coach .version {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--tenue);
+  margin: 16px 0 8px;
+}
+
+/* --- Rutina propuesta --- */
+.tarjeta-rutina {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 14px;
+}
+
+.tarjeta-rutina header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.tarjeta-rutina h3 {
+  font-size: 1rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.tarjeta-rutina header .tenue {
+  margin: 0;
+  flex: 0 0 auto;
+  font-variant-numeric: tabular-nums;
+}
+
+.tarjeta-rutina ul {
+  list-style: none;
+  margin: 8px 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.tarjeta-rutina li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2px 8px;
+}
+
+.tarjeta-rutina .ejercicio {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.tarjeta-rutina .objetivo-coach {
+  color: var(--tenue);
+  font-variant-numeric: tabular-nums;
+}
+
+.tarjeta-rutina .acciones {
+  flex-wrap: wrap;
+}
+
+.tarjeta-rutina .acciones button {
+  flex: 1 1 auto;
+  min-height: 48px;
+}
+
+.tarjeta-rutina .error {
+  margin: 8px 0 0;
+}
+
+.tarjeta-programa {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.tarjeta-programa > header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.tarjeta-programa > header h3 {
+  font-size: 1.05rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.tarjeta-programa > header .tenue {
+  margin: 0;
+  flex: 0 0 auto;
+}
+
+/* Sin doble borde: las sesiones van separadas por una línea. */
+.tarjeta-programa .tarjeta-rutina {
+  padding: 10px 0 0;
+  background: none;
+  border: 0;
+  border-top: 1px solid var(--borde);
+  border-radius: 0;
+}
+
+.tarjeta-programa > .secundario {
+  width: 100%;
+  min-height: 48px;
+}
+
+.aviso-peso {
+  font-size: 0.85rem;
+  margin: 8px 0 0;
+}
+
+/* Visible solo para lectores de pantalla. */
+.coach .solo-lector {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* --- Plan del día: bloque fijo sobre el chat --- */
+.coach .plan-dia {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  min-width: 0;
+}
+
+.coach .plan-dia h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.coach .plan-dia .burbuja {
+  align-self: stretch;
+}

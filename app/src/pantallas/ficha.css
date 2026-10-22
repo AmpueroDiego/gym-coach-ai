@@ -1,0 +1,87 @@
+.info-ejercicio {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  font-size: 1.2rem;
+  line-height: 1;
+  flex: none;
+}
+
+.hoja.ficha {
+  background: #1c2128;
+}
+
+.ficha .fotos {
+  display: grid;
+  gap: 8px;
+}
+
+.ficha .fotos.lado {
+  grid-template-columns: 1fr 1fr;
+}
+
+.ficha .fotos img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 12px;
+  background: #fff;
+}
+
+/* Animada: las dos fotos se apilan en un botón (toca para pausar) y se funden entre sí. */
+.ficha .fotos.animada {
+  grid-template-columns: 1fr;
+}
+
+.ficha .fotos .marco {
+  display: grid;
+  position: relative;
+  padding: 0;
+  border: 0;
+  background: none;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* La entrante se funde encima y la saliente se apaga recién al terminar: sin bache oscuro a mitad.
+   400ms = MS_FUNDIDO en animacion.ts. */
+.ficha .fotos.animada img {
+  grid-area: 1 / 1;
+  opacity: 0;
+  transition: opacity 0s 400ms;
+}
+
+.ficha .fotos.animada img.activa {
+  opacity: 1;
+  z-index: 1;
+  transition: opacity 400ms ease-in-out;
+}
+
+.ficha .fotos .play {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-size: 0.9rem;
+  pointer-events: none;
+}
+
+.ficha .pasos {
+  margin: 0;
+  padding-left: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ficha .pie-ficha {
+  font-size: 0.8rem;
+  margin: 0;
+}

@@ -1,0 +1,91 @@
+/* "Lo que ve el coach" y "Mis ejercicios": lecturas en una columna, sin tocar el formulario del perfil. */
+.perfil-entrenamiento {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.perfil-entrenamiento h3,
+.mis-ejercicios h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.perfil-entrenamiento dl {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+}
+
+.perfil-entrenamiento dt {
+  color: var(--tenue);
+  font-size: 0.85rem;
+}
+
+.perfil-entrenamiento dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.perfil-entrenamiento ul,
+.mis-ejercicios ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 4px;
+}
+
+.perfil-entrenamiento pre {
+  margin: 8px 0 0;
+  padding: 8px;
+  max-height: 50vh;
+  overflow: auto;
+  font-size: 0.75rem;
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.perfil-entrenamiento summary {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.mis-ejercicios {
+  display: grid;
+  gap: 16px;
+}
+
+.mis-ejercicios section {
+  display: grid;
+  gap: 8px;
+}
+
+.mis-ejercicios li {
+  padding: 12px;
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  overflow-wrap: anywhere;
+}
+
+/* Selector de equipo del perfil: dos columnas, objetivos de 48 px. */
+.opciones-equipo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.opciones-equipo button {
+  min-height: 48px;
+}
+
+.opciones-equipo button[aria-pressed='true'] {
+  background: var(--acento);
+  color: var(--acento-texto);
+  font-weight: 700;
+}

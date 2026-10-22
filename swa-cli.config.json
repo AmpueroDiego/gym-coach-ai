@@ -1,0 +1,13 @@
+{
+  "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
+  "configurations": {
+    "gym-coach": {
+      "appLocation": "app",
+      "apiLocation": "api",
+      "outputLocation": "dist",
+      "appDevserverUrl": "http://localhost:5173",
+      "run": "npm run dev",
+      "apiDevserverUrl": "http://localhost:7071"
+    }
+  }
+}

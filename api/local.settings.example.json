@@ -1,0 +1,19 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "COSMOS_ENDPOINT": "https://localhost:8081",
+    "COSMOS_KEY": "C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==",
+    "COSMOS_DB": "gymcoach",
+    "GOOGLE_CLIENT_ID": "TU_CLIENT_ID.apps.googleusercontent.com",
+    "SESSION_SECRET": "",
+    "AZURE_OPENAI_ENDPOINT": "https://TU_RECURSO.openai.azure.com/",
+    "AZURE_OPENAI_KEY": "TU_KEY_DE_AZURE_OPENAI",
+    "AZURE_OPENAI_DEPLOYMENT": "coach-mini",
+    "AZURE_OPENAI_REASONING": "minimal",
+    "COACH_MOTOR": "bucle",
+    "FOUNDRY_PROJECT_ENDPOINT": "https://TU_RECURSO.services.ai.azure.com/api/projects/TU_PROYECTO",
+    "COACH_AGENTE": "gym-coach"
+  }
+}

@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.ampuerodiego.gymcoach",
+        "sha256_cert_fingerprints": ["DA:1C:63:E2:CA:8F:65:97:A8:6B:60:75:8F:56:E7:8B:80:20:99:08:AE:3D:12:D7:92:84:C2:EB:93:7B:FD:22"]
+      }
+    }]

@@ -1,0 +1,1586 @@
+{
+  "fuente": {
+    "repo": "yuhonas/free-exercise-db",
+    "sha": "f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5",
+    "licencia": "Unlicense"
+  },
+  "ejercicios": {
+    "press-banca": {
+      "refId": "Barbell_Bench_Press_-_Medium_Grip",
+      "equipo": "Barra en banco plano",
+      "equipoEn": "Flat bench barbell",
+      "principales": [
+        "chest"
+      ],
+      "secundarios": [
+        "shoulders",
+        "triceps"
+      ],
+      "pasos": [
+        "Acuéstate en el banco con los pies firmes en el suelo y los ojos bajo la barra.",
+        "Agarra la barra un poco más ancho que los hombros y sácala del soporte con los brazos estirados.",
+        "Baja la barra controlada hasta rozar la parte media del pecho.",
+        "Empuja hacia arriba hasta estirar los brazos, sin despegar la espalda ni los glúteos del banco."
+      ],
+      "pasosEn": [
+        "Lie on the bench with feet planted and eyes under the bar.",
+        "Grip the bar slightly wider than shoulders and unrack it with arms straight.",
+        "Lower the bar under control until it touches mid-chest.",
+        "Press up until arms are straight, keeping back and glutes on the bench."
+      ],
+      "imagenes": [
+        "Barbell_Bench_Press_-_Medium_Grip/0.jpg",
+        "Barbell_Bench_Press_-_Medium_Grip/1.jpg"
+      ]
+    },
+    "press-inclinado-barra": {
+      "refId": "Barbell_Incline_Bench_Press_-_Medium_Grip",
+      "equipo": "Barra en banco inclinado",
+      "equipoEn": "Incline bench barbell",
+      "principales": [
+        "chest"
+      ],
+      "secundarios": [
+        "shoulders",
+        "triceps"
+      ],
+      "pasos": [
+        "Ajusta el banco a una inclinación suave y acuéstate con los pies firmes en el suelo.",
+        "Agarra la barra un poco más ancho que los hombros y sácala del soporte.",
+        "Baja la barra controlada hasta la parte alta del pecho.",
+        "Empuja hacia arriba hasta estirar los brazos, sin arquear de más la espalda."
+      ],
+      "pasosEn": [
+        "Set the bench to a slight incline and lie back with feet planted.",
+        "Grip the bar slightly wider than shoulders and unrack it.",
+        "Lower the bar under control to the upper chest.",
+        "Press up until arms are straight, without over-arching your back."
+      ],
+      "imagenes": [
+        "Barbell_Incline_Bench_Press_-_Medium_Grip/0.jpg",
+        "Barbell_Incline_Bench_Press_-_Medium_Grip/1.jpg"
+      ]
+    },
+    "press-banca-mancuernas": {
+      "refId": "Dumbbell_Bench_Press",
+      "equipo": "Mancuernas en banco plano",
+      "equipoEn": "Flat bench dumbbells",
+      "principales": [
+        "chest"
+      ],
+      "secundarios": [
+        "shoulders",
+        "triceps"
+      ],
+      "pasos": [
+        "Siéntate en el banco con las mancuernas sobre los muslos y acuéstate llevándolas al pecho.",
+        "Empieza con las mancuernas a los lados del pecho y los codos algo cerrados.",
+        "Empuja hacia arriba hasta estirar los brazos, acercando las mancuernas sin chocarlas.",
+        "Baja despacio hasta sentir el estiramiento en el pecho."
+      ],
+      "pasosEn": [
+        "Sit with the dumbbells on your thighs, then lie back and bring them to your chest.",
+        "Start with dumbbells beside your chest and elbows slightly tucked.",
+        "Press up until arms are straight, bringing the dumbbells close without clashing.",
+        "Lower slowly until you feel a stretch in your chest."
+      ],
+      "imagenes": [
+        "Dumbbell_Bench_Press/0.jpg",
+        "Dumbbell_Bench_Press/1.jpg"
+      ]
+    },
+    "press-inclinado-mancuernas": {
+      "refId": "Incline_Dumbbell_Press",
+      "equipo": "Mancuernas en banco inclinado",
+      "equipoEn": "Incline bench dumbbells",
+      "principales": [
+        "chest"
+      ],
+      "secundarios": [
+        "shoulders",
+        "triceps"
+      ],
+      "pasos": [
+        "Ajusta el banco a una inclinación suave y siéntate con las mancuernas sobre los muslos.",
+        "Acuéstate y sube las mancuernas a los lados de la parte alta del pecho.",
+        "Empuja hacia arriba hasta estirar los brazos, sin chocar las mancuernas.",
+        "Baja despacio hasta sentir el estiramiento en el pecho."
+      ],
+      "pasosEn": [
+        "Set the bench to a slight incline and sit with dumbbells on your thighs.",
+        "Lie back and lift the dumbbells beside your upper chest.",
+        "Press up until arms are straight, without clashing the dumbbells.",
+        "Lower slowly until you feel a stretch in your chest."
+      ],
+      "imagenes": [
+        "Incline_Dumbbell_Press/0.jpg",
+        "Incline_Dumbbell_Press/1.jpg"
+      ]
+    },
+    "aperturas-mancuernas": {
+      "refId": "Dumbbell_Flyes",
+      "equipo": "Mancuernas en banco plano",
+      "equipoEn": "Flat bench dumbbells",
+      "principales": [
+        "chest"
+      ],
+      "secundarios": [],
+      "pasos": [
+        "Acuéstate en el banco con una mancuerna en cada mano, brazos estirados sobre el pecho y palmas enfrentadas.",
+        "Con los codos ligeramente doblados, abre los brazos en arco hasta sentir el estiramiento en el pecho.",
+        "Cierra el arco hacia arriba como si abrazaras un árbol, apretando el pecho.",
+        "Mantén el mismo ángulo de codos todo el movimiento."
+      ],
+      "pasosEn": [
+        "Lie on the bench with a dumbbell in each hand, arms straight over chest, palms facing.",
+        "With elbows slightly bent, open your arms in an arc until you feel a chest stretch.",
+        "Close the arc upward as if hugging a tree, squeezing your chest.",
+        "Keep the same elbow angle throughout the movement."
+      ],
+      "imagenes": [
+        "Dumbbell_Flyes/0.jpg",
+        "Dumbbell_Flyes/1.jpg"
+      ]
+    },
+    "cruce-poleas": {
+      "refId": "Cable_Crossover",
+      "equipo": "Poleas altas dobles (cruce de poleas)",
+      "equipoEn": "Dual high cable crossover",
+      "principales": [
+        "chest"
+      ],
+      "secundarios": [
+        "shoulders"
+      ],
+      "pasos": [
+        "Ponte en el centro entre las dos poleas altas y toma una manija con cada mano.",
+        "Da un paso al frente con el torso un poco inclinado y los codos ligeramente doblados.",
+        "Junta las manos al frente bajando en arco y aprieta el pecho un segundo.",
+        "Regresa despacio abriendo los brazos hasta sentir el estiramiento."
+      ],
+      "pasosEn": [
+        "Stand centered between the two high pulleys and take a handle in each hand.",
+        "Step forward with a slight torso lean and elbows slightly bent.",
+        "Bring your hands together in front in an arc and squeeze your chest for a second.",
+        "Return slowly, opening your arms until you feel a stretch."
+      ],
+      "imagenes": [
+        "Cable_Crossover/0.jpg",
+        "Cable_Crossover/1.jpg"
+      ]
+    },
+    "fondos": {
+      "refId": "Dips_-_Chest_Version",
+      "equipo": "Barras paralelas (fondos)",
+      "equipoEn": "Parallel bars (dips)",
+      "principales": [
+        "chest"
+      ],
+      "secundarios": [
+        "shoulders",
+        "triceps"
+      ],
+      "pasos": [
+        "Sujétate de las barras con los brazos estirados y el cuerpo inclinado un poco hacia adelante.",
+        "Baja doblando los codos, abriéndolos un poco, hasta sentir el estiramiento en el pecho.",
+        "Empuja con las manos para subir hasta estirar los brazos.",
+        "Evita balancearte: sube y baja con control."
+      ],
+      "pasosEn": [
+        "Grip the bars with arms straight and body leaning slightly forward.",
+        "Lower by bending your elbows, flaring them a little, until you feel a chest stretch.",
+        "Push through your hands to rise until arms are straight.",
+        "Avoid swinging: move up and down under control."
+      ],
+      "imagenes": [
+        "Dips_-_Chest_Version/0.jpg",
+        "Dips_-_Chest_Version/1.jpg"
+      ]
+    },
+    "lagartijas": {
+      "refId": "Pushups",
+      "equipo": "Peso corporal",
+      "equipoEn": "Bodyweight",
+      "principales": [
+        "chest"
+      ],
+      "secundarios": [
+        "shoulders",
+        "triceps"
+      ],
+      "pasos": [
+        "Apoya las manos en el suelo un poco más anchas que los hombros, con el cuerpo recto de cabeza a talones.",
+        "Baja doblando los codos hasta que el pecho casi toque el suelo.",
+        "Empuja el suelo para volver arriba, sin hundir ni subir la cadera.",
+        "Si es muy difícil, apoya las rodillas."
+      ],
+      "pasosEn": [
+        "Place hands on the floor slightly wider than shoulders, body straight from head to heels.",
+        "Lower by bending your elbows until your chest almost touches the floor.",
+        "Push the floor away to return up, without sagging or raising your hips.",
+        "If it is too hard, rest on your knees."
+      ],
+      "imagenes": [
+        "Pushups/0.jpg",
+        "Pushups/1.jpg"
+      ]
+    },
+    "press-pecho-maquina": {
+      "refId": "Leverage_Chest_Press",
+      "equipo": "Máquina de press de pecho",
+      "equipoEn": "Chest press machine",
+      "principales": [
+        "chest"
+      ],
+      "secundarios": [
+        "shoulders",
+        "triceps"
+      ],
+      "pasos": [
+        "Ajusta el asiento para que las manijas queden a la altura de la mitad del pecho.",
+        "Siéntate con la espalda pegada al respaldo y toma las manijas.",
+        "Empuja hacia adelante hasta estirar los brazos sin trabar los codos.",
+        "Regresa despacio hasta sentir el estiramiento en el pecho."
+      ],
+      "pasosEn": [
+        "Adjust the seat so the handles sit at mid-chest height.",
+        "Sit with your back against the pad and grip the handles.",
+        "Press forward until arms are straight, without locking your elbows.",
+        "Return slowly until you feel a stretch in your chest."
+      ],
+      "imagenes": [
+        "Leverage_Chest_Press/0.jpg",
+        "Leverage_Chest_Press/1.jpg"
+      ]
+    },
+    "press-pecho-iso-lateral": {
+      "refId": "Leverage_Chest_Press",
+      "equipo": "Máquina de press de pecho iso-lateral",
+      "equipoEn": "Iso-lateral chest press machine",
+      "principales": [
+        "chest"
+      ],
+      "secundarios": [
+        "shoulders",
+        "triceps"
+      ],
+      "pasos": [
+        "Ajusta el asiento para que las manijas queden a la altura de la mitad del pecho.",
+        "Siéntate con la espalda pegada al respaldo y toma las manijas; cada brazo trabaja por separado.",
+        "Empuja hacia adelante hasta estirar los brazos sin trabar los codos.",
+        "Regresa despacio hasta sentir el estiramiento en el pecho."
+      ],
+      "pasosEn": [
+        "Adjust the seat so the handles sit at mid-chest height.",
+        "Sit with your back against the pad and grip the handles; each arm works on its own.",
+        "Press forward until arms are straight, without locking your elbows.",
+        "Return slowly until you feel a stretch in your chest."
+      ],
+      "imagenes": [
+        "Leverage_Chest_Press/0.jpg",
+        "Leverage_Chest_Press/1.jpg"
+      ]
+    },
+    "pec-deck": {
+      "refId": "Butterfly",
+      "equipo": "Máquina pec deck (aperturas)",
+      "equipoEn": "Pec deck machine (flyes)",
+      "principales": [
+        "chest"
+      ],
+      "secundarios": [],
+      "pasos": [
+        "Ajusta el asiento para que los brazos queden paralelos al suelo al tomar las manijas.",
+        "Siéntate con la espalda pegada al respaldo y los codos a la altura de los hombros.",
+        "Junta las manijas al frente y aprieta el pecho un segundo.",
+        "Regresa despacio hasta sentir el estiramiento, sin dejar caer la pila de pesas."
+      ],
+      "pasosEn": [
+        "Adjust the seat so your arms are parallel to the floor when gripping the handles.",
+        "Sit with your back against the pad and elbows at shoulder height.",
+        "Bring the handles together in front and squeeze your chest for a second.",
+        "Return slowly until you feel a stretch, without dropping the weight stack."
+      ],
+      "imagenes": [
+        "Butterfly/0.jpg",
+        "Butterfly/1.jpg"
+      ]
+    },
+    "peso-muerto": {
+      "refId": "Barbell_Deadlift",
+      "equipo": "Barra en el suelo",
+      "equipoEn": "Barbell on the floor",
+      "principales": [
+        "lower back"
+      ],
+      "secundarios": [
+        "calves",
+        "forearms",
+        "glutes",
+        "hamstrings",
+        "lats",
+        "middle back",
+        "quadriceps",
+        "traps"
+      ],
+      "pasos": [
+        "Párate con los pies al ancho de la cadera y la barra sobre la mitad del pie.",
+        "Baja la cadera, agarra la barra al ancho de los hombros, con la espalda recta y el pecho arriba.",
+        "Empuja el suelo con las piernas y sube la barra pegada al cuerpo hasta quedar de pie.",
+        "Baja llevando la cadera atrás y la barra pegada a las piernas, sin redondear la espalda."
+      ],
+      "pasosEn": [
+        "Stand with feet hip-width apart and the bar over mid-foot.",
+        "Lower your hips and grip the bar shoulder-width, back straight and chest up.",
+        "Push the floor away with your legs and lift the bar close to your body until standing.",
+        "Lower by pushing hips back, bar close to your legs, without rounding your back."
+      ],
+      "imagenes": [
+        "Barbell_Deadlift/0.jpg",
+        "Barbell_Deadlift/1.jpg"
+      ]
+    },
+    "dominadas": {
+      "refId": "Pullups",
+      "equipo": "Barra de dominadas",
+      "equipoEn": "Pull-up bar",
+      "principales": [
+        "lats"
+      ],
+      "secundarios": [
+        "biceps",
+        "middle back"
+      ],
+      "pasos": [
+        "Cuélgate de la barra con agarre un poco más ancho que los hombros y los brazos estirados.",
+        "Aprieta la espalda y jala el cuerpo hacia arriba hasta pasar la barbilla de la barra.",
+        "Baja despacio hasta estirar los brazos por completo.",
+        "Evita balancearte; si aún no puedes, usa la máquina asistida."
+      ],
+      "pasosEn": [
+        "Hang from the bar with a grip slightly wider than shoulders and arms straight.",
+        "Squeeze your back and pull up until your chin clears the bar.",
+        "Lower slowly until your arms are fully straight.",
+        "Avoid swinging; if you cannot yet, use the assisted machine."
+      ],
+      "imagenes": [
+        "Pullups/0.jpg",
+        "Pullups/1.jpg"
+      ]
+    },
+    "jalon-pecho": {
+      "refId": "Wide-Grip_Lat_Pulldown",
+      "equipo": "Polea alta con barra ancha",
+      "equipoEn": "High cable with wide bar",
+      "principales": [
+        "lats"
+      ],
+      "secundarios": [
+        "biceps",
+        "middle back",
+        "shoulders"
+      ],
+      "pasos": [
+        "Ajusta el cojín para que sujete tus muslos y toma la barra más ancho que los hombros.",
+        "Inclínate un poco hacia atrás con el pecho arriba.",
+        "Jala la barra hasta la parte alta del pecho, llevando los codos hacia abajo y atrás.",
+        "Sube la barra despacio hasta estirar los brazos, sin soltar el control."
+      ],
+      "pasosEn": [
+        "Adjust the pad to hold your thighs and grab the bar wider than shoulders.",
+        "Lean back slightly with your chest up.",
+        "Pull the bar to your upper chest, driving elbows down and back.",
+        "Raise the bar slowly until arms are straight, staying in control."
+      ],
+      "imagenes": [
+        "Wide-Grip_Lat_Pulldown/0.jpg",
+        "Wide-Grip_Lat_Pulldown/1.jpg"
+      ]
+    },
+    "remo-barra": {
+      "refId": "Bent_Over_Barbell_Row",
+      "equipo": "Barra",
+      "equipoEn": "Barbell",
+      "principales": [
+        "middle back"
+      ],
+      "secundarios": [
+        "biceps",
+        "lats",
+        "shoulders"
+      ],
+      "pasos": [
+        "Párate con los pies al ancho de la cadera, rodillas flexionadas, y agarra la barra un poco más ancho que los hombros.",
+        "Inclina el torso casi paralelo al suelo con la espalda recta.",
+        "Jala la barra hacia el abdomen llevando los codos atrás y juntando los omóplatos.",
+        "Baja despacio hasta estirar los brazos, sin redondear la espalda."
+      ],
+      "pasosEn": [
+        "Stand with feet hip-width apart, knees bent, and grip the bar slightly wider than shoulders.",
+        "Lean your torso nearly parallel to the floor with a straight back.",
+        "Pull the bar to your abdomen, elbows back, squeezing your shoulder blades together.",
+        "Lower slowly until arms are straight, without rounding your back."
+      ],
+      "imagenes": [
+        "Bent_Over_Barbell_Row/0.jpg",
+        "Bent_Over_Barbell_Row/1.jpg"
+      ]
+    },
+    "remo-mancuerna": {
+      "refId": "One-Arm_Dumbbell_Row",
+      "equipo": "Mancuerna y banco",
+      "equipoEn": "Dumbbell and bench",
+      "principales": [
+        "middle back"
+      ],
+      "secundarios": [
+        "biceps",
+        "lats",
+        "shoulders"
+      ],
+      "pasos": [
+        "Apoya una mano y una rodilla en el banco, con la espalda recta y una mancuerna en la otra mano.",
+        "Deja el brazo estirado hacia el suelo.",
+        "Jala la mancuerna hacia la cadera, llevando el codo cerca del cuerpo.",
+        "Baja despacio hasta estirar el brazo, sin girar el torso."
+      ],
+      "pasosEn": [
+        "Place one hand and one knee on the bench, back straight, dumbbell in the other hand.",
+        "Let the arm hang straight toward the floor.",
+        "Pull the dumbbell to your hip, keeping the elbow close to your body.",
+        "Lower slowly until the arm is straight, without twisting your torso."
+      ],
+      "imagenes": [
+        "One-Arm_Dumbbell_Row/0.jpg",
+        "One-Arm_Dumbbell_Row/1.jpg"
+      ]
+    },
+    "remo-polea-baja": {
+      "refId": "Seated_Cable_Rows",
+      "equipo": "Polea baja con agarre en V",
+      "equipoEn": "Low cable with V-handle",
+      "principales": [
+        "middle back"
+      ],
+      "secundarios": [
+        "biceps",
+        "lats",
+        "shoulders"
+      ],
+      "pasos": [
+        "Siéntate con los pies en las plataformas, rodillas ligeramente flexionadas, y toma el agarre.",
+        "Siéntate erguido con la espalda recta y los brazos estirados.",
+        "Jala el agarre hacia el abdomen, juntando los omóplatos y con los codos pegados al cuerpo.",
+        "Regresa despacio estirando los brazos, sin encorvarte."
+      ],
+      "pasosEn": [
+        "Sit with feet on the platforms, knees slightly bent, and take the handle.",
+        "Sit tall with a straight back and arms extended.",
+        "Pull the handle to your abdomen, squeezing shoulder blades with elbows tight to your body.",
+        "Return slowly extending your arms, without slouching."
+      ],
+      "imagenes": [
+        "Seated_Cable_Rows/0.jpg",
+        "Seated_Cable_Rows/1.jpg"
+      ]
+    },
+    "jalon-pecho-maquina": {
+      "refId": "Wide-Grip_Lat_Pulldown",
+      "equipo": "Máquina de jalón al pecho",
+      "equipoEn": "Lat pulldown machine",
+      "principales": [
+        "lats"
+      ],
+      "secundarios": [
+        "biceps",
+        "middle back",
+        "shoulders"
+      ],
+      "pasos": [
+        "Ajusta el asiento y el cojín para que sujeten tus muslos.",
+        "Toma las manijas con los brazos estirados y el pecho arriba.",
+        "Jala hacia abajo llevando los codos hacia las costillas y aprieta la espalda.",
+        "Sube despacio hasta estirar los brazos, sin soltar el control."
+      ],
+      "pasosEn": [
+        "Adjust the seat and pad so they hold your thighs.",
+        "Grip the handles with arms straight and chest up.",
+        "Pull down, driving elbows toward your ribs, and squeeze your back.",
+        "Raise slowly until arms are straight, staying in control."
+      ],
+      "imagenes": [
+        "Wide-Grip_Lat_Pulldown/0.jpg",
+        "Wide-Grip_Lat_Pulldown/1.jpg"
+      ],
+      "aproximada": true
+    },
+    "remo-iso-lateral": {
+      "refId": "Leverage_Iso_Row",
+      "equipo": "Máquina de remo iso-lateral",
+      "equipoEn": "Iso-lateral row machine",
+      "principales": [
+        "lats"
+      ],
+      "secundarios": [
+        "biceps",
+        "middle back"
+      ],
+      "pasos": [
+        "Ajusta el asiento para que las manijas queden a la altura del pecho y apoya el pecho en el cojín.",
+        "Toma las manijas con los brazos estirados; cada brazo trabaja por separado.",
+        "Jala las manijas hacia ti, llevando los codos atrás y juntando los omóplatos.",
+        "Regresa despacio sin soltar del todo la tensión."
+      ],
+      "pasosEn": [
+        "Adjust the seat so handles are at chest height and rest your chest on the pad.",
+        "Grip the handles with arms straight; each arm works on its own.",
+        "Pull the handles toward you, elbows back, squeezing your shoulder blades.",
+        "Return slowly without fully releasing the tension."
+      ],
+      "imagenes": [
+        "Leverage_Iso_Row/0.jpg",
+        "Leverage_Iso_Row/1.jpg"
+      ]
+    },
+    "remo-bajo-iso-lateral": {
+      "refId": "Leverage_Iso_Row",
+      "equipo": "Máquina de remo bajo iso-lateral",
+      "equipoEn": "Iso-lateral low row machine",
+      "principales": [
+        "lats"
+      ],
+      "secundarios": [
+        "biceps",
+        "middle back"
+      ],
+      "pasos": [
+        "Ajusta el asiento y apoya el pecho en el cojín con los pies firmes en la plataforma.",
+        "Toma las manijas con los brazos estirados; cada brazo trabaja por separado.",
+        "Jala las manijas hacia la cadera, llevando los codos atrás y juntando los omóplatos.",
+        "Regresa despacio hasta estirar los brazos, sin soltar del todo la tensión."
+      ],
+      "pasosEn": [
+        "Adjust the seat and rest your chest on the pad with feet firm on the platform.",
+        "Grip the handles with arms straight; each arm works on its own.",
+        "Pull the handles toward your hips, elbows back, squeezing your shoulder blades.",
+        "Return slowly until arms are straight, without fully releasing the tension."
+      ],
+      "imagenes": [
+        "Leverage_Iso_Row/0.jpg",
+        "Leverage_Iso_Row/1.jpg"
+      ],
+      "aproximada": true
+    },
+    "press-militar": {
+      "refId": "Standing_Military_Press",
+      "equipo": "Barra de pie",
+      "equipoEn": "Standing barbell",
+      "principales": [
+        "shoulders"
+      ],
+      "secundarios": [
+        "triceps"
+      ],
+      "pasos": [
+        "Párate con los pies al ancho de los hombros y la barra apoyada en la parte alta del pecho.",
+        "Agarra la barra un poco más ancho que los hombros, con glúteos y abdomen apretados.",
+        "Empuja la barra hacia arriba hasta estirar los brazos, echando la cabeza un poco atrás para dejarla pasar.",
+        "Baja la barra controlada hasta la parte alta del pecho."
+      ],
+      "pasosEn": [
+        "Stand with feet shoulder-width apart and the bar resting on your upper chest.",
+        "Grip the bar slightly wider than shoulders, glutes and abs tight.",
+        "Press the bar overhead until arms are straight, tilting your head back slightly to clear it.",
+        "Lower the bar under control to your upper chest."
+      ],
+      "imagenes": [
+        "Standing_Military_Press/0.jpg",
+        "Standing_Military_Press/1.jpg"
+      ]
+    },
+    "press-hombro-mancuernas": {
+      "refId": "Dumbbell_Shoulder_Press",
+      "equipo": "Mancuernas sentado",
+      "equipoEn": "Seated dumbbells",
+      "principales": [
+        "shoulders"
+      ],
+      "secundarios": [
+        "triceps"
+      ],
+      "pasos": [
+        "Siéntate en un banco con respaldo y sube las mancuernas a la altura de los hombros.",
+        "Empieza con los codos doblados y las palmas hacia adelante.",
+        "Empuja las mancuernas hacia arriba hasta estirar los brazos, sin chocarlas.",
+        "Baja despacio hasta la altura de las orejas."
+      ],
+      "pasosEn": [
+        "Sit on a bench with back support and lift the dumbbells to shoulder height.",
+        "Start with elbows bent and palms facing forward.",
+        "Press the dumbbells up until arms are straight, without clashing them.",
+        "Lower slowly to ear level."
+      ],
+      "imagenes": [
+        "Dumbbell_Shoulder_Press/0.jpg",
+        "Dumbbell_Shoulder_Press/1.jpg"
+      ]
+    },
+    "elevaciones-laterales": {
+      "refId": "Side_Lateral_Raise",
+      "equipo": "Mancuernas",
+      "equipoEn": "Dumbbells",
+      "principales": [
+        "shoulders"
+      ],
+      "secundarios": [],
+      "pasos": [
+        "Párate con una mancuerna en cada mano a los lados, con los codos ligeramente doblados.",
+        "Levanta los brazos hacia los lados hasta la altura de los hombros.",
+        "Haz una pausa corta arriba, sin encoger los hombros hacia las orejas.",
+        "Baja despacio, sin balancear el cuerpo."
+      ],
+      "pasosEn": [
+        "Stand with a dumbbell in each hand at your sides, elbows slightly bent.",
+        "Raise your arms out to the sides to shoulder height.",
+        "Pause briefly at the top, without shrugging toward your ears.",
+        "Lower slowly, without swinging your body."
+      ],
+      "imagenes": [
+        "Side_Lateral_Raise/0.jpg",
+        "Side_Lateral_Raise/1.jpg"
+      ]
+    },
+    "pajaros": {
+      "refId": "Seated_Bent-Over_Rear_Delt_Raise",
+      "equipo": "Mancuernas sentado",
+      "equipoEn": "Seated dumbbells",
+      "principales": [
+        "shoulders"
+      ],
+      "secundarios": [],
+      "pasos": [
+        "Siéntate al borde del banco con una mancuerna en cada mano e inclina el torso hacia adelante.",
+        "Deja los brazos colgando bajo las rodillas, con los codos ligeramente doblados.",
+        "Levanta los brazos hacia los lados hasta la altura de los hombros, apretando la parte de atrás del hombro.",
+        "Baja despacio, sin balancear el torso."
+      ],
+      "pasosEn": [
+        "Sit at the edge of the bench with a dumbbell in each hand and lean your torso forward.",
+        "Let your arms hang below your knees, elbows slightly bent.",
+        "Raise your arms out to the sides to shoulder height, squeezing the rear shoulder.",
+        "Lower slowly, without swinging your torso."
+      ],
+      "imagenes": [
+        "Seated_Bent-Over_Rear_Delt_Raise/0.jpg",
+        "Seated_Bent-Over_Rear_Delt_Raise/1.jpg"
+      ]
+    },
+    "face-pull": {
+      "refId": "Face_Pull",
+      "equipo": "Polea alta con cuerda",
+      "equipoEn": "High cable with rope",
+      "principales": [
+        "shoulders"
+      ],
+      "secundarios": [
+        "middle back"
+      ],
+      "pasos": [
+        "Ajusta la polea a la altura de la cara y toma la cuerda con las palmas hacia adentro.",
+        "Da un paso atrás con los brazos estirados y el cuerpo estable.",
+        "Jala la cuerda hacia la cara, abriendo los codos hacia los lados y juntando los omóplatos.",
+        "Regresa despacio hasta estirar los brazos."
+      ],
+      "pasosEn": [
+        "Set the pulley at face height and take the rope with palms facing in.",
+        "Step back with arms straight and a stable stance.",
+        "Pull the rope toward your face, elbows flaring out and shoulder blades together.",
+        "Return slowly until arms are straight."
+      ],
+      "imagenes": [
+        "Face_Pull/0.jpg",
+        "Face_Pull/1.jpg"
+      ]
+    },
+    "press-hombro-maquina": {
+      "refId": "Leverage_Shoulder_Press",
+      "equipo": "Máquina de press de hombro",
+      "equipoEn": "Shoulder press machine",
+      "principales": [
+        "shoulders"
+      ],
+      "secundarios": [
+        "triceps"
+      ],
+      "pasos": [
+        "Ajusta el asiento para que las manijas queden a la altura de los hombros.",
+        "Siéntate con la espalda pegada al respaldo y toma las manijas.",
+        "Empuja hacia arriba hasta estirar los brazos, sin trabar los codos.",
+        "Baja despacio hasta la altura de los hombros."
+      ],
+      "pasosEn": [
+        "Adjust the seat so the handles are at shoulder height.",
+        "Sit with your back against the pad and grip the handles.",
+        "Press up until arms are straight, without locking your elbows.",
+        "Lower slowly to shoulder height."
+      ],
+      "imagenes": [
+        "Leverage_Shoulder_Press/0.jpg",
+        "Leverage_Shoulder_Press/1.jpg"
+      ]
+    },
+    "elevaciones-laterales-maquina": {
+      "refId": "Seated_Side_Lateral_Raise",
+      "equipo": "Máquina de elevaciones laterales",
+      "equipoEn": "Lateral raise machine",
+      "principales": [
+        "shoulders"
+      ],
+      "secundarios": [],
+      "pasos": [
+        "Ajusta el asiento para que tus hombros queden a la altura del eje de giro de la máquina.",
+        "Siéntate con la espalda pegada y apoya los antebrazos o las manos en los cojines.",
+        "Levanta los brazos hacia los lados hasta la altura de los hombros, sin encogerlos hacia las orejas.",
+        "Baja despacio, sin dejar caer la pila de pesas."
+      ],
+      "pasosEn": [
+        "Adjust the seat so your shoulders line up with the machine pivot.",
+        "Sit with your back against the pad and rest forearms or hands on the pads.",
+        "Raise your arms out to shoulder height, without shrugging toward your ears.",
+        "Lower slowly, without dropping the weight stack."
+      ],
+      "imagenes": [
+        "Seated_Side_Lateral_Raise/0.jpg",
+        "Seated_Side_Lateral_Raise/1.jpg"
+      ],
+      "aproximada": true
+    },
+    "curl-barra": {
+      "refId": "Barbell_Curl",
+      "equipo": "Barra recta",
+      "equipoEn": "Straight barbell",
+      "principales": [
+        "biceps"
+      ],
+      "secundarios": [
+        "forearms"
+      ],
+      "pasos": [
+        "Párate con los pies al ancho de los hombros y agarra la barra con las palmas hacia arriba.",
+        "Deja los brazos estirados y los codos pegados a las costillas.",
+        "Sube la barra doblando los codos, sin mover los codos hacia adelante ni balancear el cuerpo.",
+        "Baja despacio hasta estirar los brazos."
+      ],
+      "pasosEn": [
+        "Stand with feet shoulder-width apart and grip the bar palms up.",
+        "Let your arms hang straight with elbows tight to your ribs.",
+        "Curl the bar up by bending your elbows, without moving them forward or swinging.",
+        "Lower slowly until arms are straight."
+      ],
+      "imagenes": [
+        "Barbell_Curl/0.jpg",
+        "Barbell_Curl/1.jpg"
+      ]
+    },
+    "curl-mancuernas": {
+      "refId": "Dumbbell_Bicep_Curl",
+      "equipo": "Mancuernas",
+      "equipoEn": "Dumbbells",
+      "principales": [
+        "biceps"
+      ],
+      "secundarios": [
+        "forearms"
+      ],
+      "pasos": [
+        "Párate con una mancuerna en cada mano a los lados y las palmas hacia adelante.",
+        "Mantén los codos pegados a las costillas.",
+        "Sube las mancuernas doblando los codos y aprieta el bíceps arriba.",
+        "Baja despacio hasta estirar los brazos, sin balancear el cuerpo."
+      ],
+      "pasosEn": [
+        "Stand with a dumbbell in each hand at your sides, palms facing forward.",
+        "Keep your elbows tight to your ribs.",
+        "Curl the dumbbells up by bending your elbows and squeeze your biceps at the top.",
+        "Lower slowly until arms are straight, without swinging your body."
+      ],
+      "imagenes": [
+        "Dumbbell_Bicep_Curl/0.jpg",
+        "Dumbbell_Bicep_Curl/1.jpg"
+      ]
+    },
+    "curl-martillo": {
+      "refId": "Hammer_Curls",
+      "equipo": "Mancuernas",
+      "equipoEn": "Dumbbells",
+      "principales": [
+        "biceps"
+      ],
+      "secundarios": [],
+      "pasos": [
+        "Párate con una mancuerna en cada mano a los lados y las palmas mirando hacia tus muslos.",
+        "Mantén los codos pegados a las costillas.",
+        "Sube las mancuernas doblando los codos, sin girar las muñecas.",
+        "Baja despacio hasta estirar los brazos."
+      ],
+      "pasosEn": [
+        "Stand with a dumbbell in each hand at your sides, palms facing your thighs.",
+        "Keep your elbows tight to your ribs.",
+        "Curl the dumbbells up by bending your elbows, without rotating your wrists.",
+        "Lower slowly until arms are straight."
+      ],
+      "imagenes": [
+        "Hammer_Curls/0.jpg",
+        "Hammer_Curls/1.jpg"
+      ]
+    },
+    "curl-predicador-maquina": {
+      "refId": "Machine_Preacher_Curls",
+      "equipo": "Máquina de curl predicador",
+      "equipoEn": "Preacher curl machine",
+      "principales": [
+        "biceps"
+      ],
+      "secundarios": [],
+      "pasos": [
+        "Ajusta el asiento para que la parte de atrás de tus brazos descanse en el cojín.",
+        "Toma las manijas con las palmas hacia arriba y los codos apoyados.",
+        "Sube las manijas doblando los codos y aprieta el bíceps arriba.",
+        "Baja despacio hasta casi estirar los brazos, sin despegar los brazos del cojín."
+      ],
+      "pasosEn": [
+        "Adjust the seat so the backs of your upper arms rest on the pad.",
+        "Grip the handles palms up with elbows supported.",
+        "Curl the handles up by bending your elbows and squeeze your biceps at the top.",
+        "Lower slowly until arms are almost straight, keeping them on the pad."
+      ],
+      "imagenes": [
+        "Machine_Preacher_Curls/0.jpg",
+        "Machine_Preacher_Curls/1.jpg"
+      ]
+    },
+    "curl-biceps-maquina": {
+      "refId": "Machine_Bicep_Curl",
+      "equipo": "Máquina de curl de bíceps",
+      "equipoEn": "Biceps curl machine",
+      "principales": [
+        "biceps"
+      ],
+      "secundarios": [],
+      "pasos": [
+        "Ajusta el asiento para que tus codos queden alineados con el eje de la máquina.",
+        "Apoya los brazos en el cojín y toma las manijas.",
+        "Sube las manijas doblando los codos y aprieta el bíceps arriba.",
+        "Baja despacio sin soltar del todo la tensión."
+      ],
+      "pasosEn": [
+        "Adjust the seat so your elbows line up with the machine axis.",
+        "Rest your arms on the pad and grip the handles.",
+        "Curl the handles up by bending your elbows and squeeze your biceps at the top.",
+        "Lower slowly without fully releasing the tension."
+      ],
+      "imagenes": [
+        "Machine_Bicep_Curl/0.jpg",
+        "Machine_Bicep_Curl/1.jpg"
+      ]
+    },
+    "extension-triceps-polea": {
+      "refId": "Triceps_Pushdown",
+      "equipo": "Polea alta con cuerda o barra",
+      "equipoEn": "High cable with rope or bar",
+      "principales": [
+        "triceps"
+      ],
+      "secundarios": [],
+      "pasos": [
+        "Párate frente a la polea alta y toma la cuerda o barra con los codos pegados a las costillas.",
+        "Empieza con los antebrazos paralelos al suelo.",
+        "Empuja hacia abajo estirando los codos y aprieta el tríceps.",
+        "Sube despacio hasta la altura inicial, sin mover los codos."
+      ],
+      "pasosEn": [
+        "Stand facing the high pulley and grip the rope or bar with elbows tight to your ribs.",
+        "Start with forearms parallel to the floor.",
+        "Push down by straightening your elbows and squeeze your triceps.",
+        "Return slowly to the starting height, without moving your elbows."
+      ],
+      "imagenes": [
+        "Triceps_Pushdown/0.jpg",
+        "Triceps_Pushdown/1.jpg"
+      ]
+    },
+    "press-frances": {
+      "refId": "Lying_Triceps_Press",
+      "equipo": "Barra Z en banco plano",
+      "equipoEn": "EZ bar on flat bench",
+      "principales": [
+        "triceps"
+      ],
+      "secundarios": [],
+      "pasos": [
+        "Acuéstate en el banco con la barra Z sobre el pecho, con los brazos estirados hacia arriba.",
+        "Mantén los codos apuntando al techo y quietos.",
+        "Baja la barra doblando solo los codos hasta acercarla a la frente.",
+        "Estira los codos para volver arriba, apretando el tríceps."
+      ],
+      "pasosEn": [
+        "Lie on the bench with the EZ bar over your chest, arms straight up.",
+        "Keep your elbows pointing at the ceiling and still.",
+        "Lower the bar by bending only your elbows until it nears your forehead.",
+        "Straighten your elbows to return up, squeezing your triceps."
+      ],
+      "imagenes": [
+        "Lying_Triceps_Press/0.jpg",
+        "Lying_Triceps_Press/1.jpg"
+      ]
+    },
+    "press-banca-cerrado": {
+      "refId": "Close-Grip_Barbell_Bench_Press",
+      "equipo": "Barra en banco plano",
+      "equipoEn": "Flat bench barbell",
+      "principales": [
+        "triceps"
+      ],
+      "secundarios": [
+        "chest",
+        "shoulders"
+      ],
+      "pasos": [
+        "Acuéstate en el banco y agarra la barra con las manos al ancho de los hombros.",
+        "Saca la barra del soporte y sostenla sobre el pecho con los brazos estirados.",
+        "Baja la barra controlada hasta el pecho, con los codos cerca del cuerpo.",
+        "Empuja hacia arriba hasta estirar los brazos."
+      ],
+      "pasosEn": [
+        "Lie on the bench and grip the bar with hands shoulder-width apart.",
+        "Unrack the bar and hold it over your chest with arms straight.",
+        "Lower the bar under control to your chest, elbows close to your body.",
+        "Press up until arms are straight."
+      ],
+      "imagenes": [
+        "Close-Grip_Barbell_Bench_Press/0.jpg",
+        "Close-Grip_Barbell_Bench_Press/1.jpg"
+      ]
+    },
+    "extension-triceps-maquina": {
+      "refId": "Machine_Triceps_Extension",
+      "equipo": "Máquina de extensión de tríceps",
+      "equipoEn": "Triceps extension machine",
+      "principales": [
+        "triceps"
+      ],
+      "secundarios": [],
+      "pasos": [
+        "Ajusta el asiento para que tus codos queden alineados con el eje de la máquina.",
+        "Apoya los brazos en el cojín y toma las manijas.",
+        "Estira los codos empujando las manijas y aprieta el tríceps al final.",
+        "Regresa despacio, sin apoyar la pila de pesas entre repeticiones."
+      ],
+      "pasosEn": [
+        "Adjust the seat so your elbows line up with the machine axis.",
+        "Rest your arms on the pad and grip the handles.",
+        "Straighten your elbows pushing the handles and squeeze your triceps at the end.",
+        "Return slowly, without resting the weight stack between reps."
+      ],
+      "imagenes": [
+        "Machine_Triceps_Extension/0.jpg",
+        "Machine_Triceps_Extension/1.jpg"
+      ]
+    },
+    "fondos-maquina": {
+      "refId": "Dip_Machine",
+      "equipo": "Máquina de fondos sentado",
+      "equipoEn": "Seated dip machine",
+      "principales": [
+        "triceps"
+      ],
+      "secundarios": [
+        "chest",
+        "shoulders"
+      ],
+      "pasos": [
+        "Ajusta el asiento y siéntate con la espalda pegada, tomando las manijas.",
+        "Mantén los codos pegados a los costados.",
+        "Empuja las manijas hacia abajo estirando los brazos y aprieta el tríceps.",
+        "Regresa las manijas despacio hasta que los codos queden a unos 90 grados, sin que los hombros suban hacia las orejas."
+      ],
+      "pasosEn": [
+        "Adjust the seat and sit with your back against the pad, gripping the handles.",
+        "Keep your elbows tight to your sides.",
+        "Push the handles down until arms are straight and squeeze your triceps.",
+        "Return slowly until elbows are about 90 degrees, without shrugging toward your ears."
+      ],
+      "imagenes": [
+        "Dip_Machine/0.jpg",
+        "Dip_Machine/1.jpg"
+      ]
+    },
+    "sentadilla": {
+      "refId": "Barbell_Squat",
+      "equipo": "Barra en rack de sentadillas",
+      "equipoEn": "Barbell in squat rack",
+      "principales": [
+        "quadriceps"
+      ],
+      "secundarios": [
+        "calves",
+        "glutes",
+        "hamstrings",
+        "lower back"
+      ],
+      "pasos": [
+        "Coloca la barra sobre la parte alta de la espalda, sácala del rack y da un paso atrás con los pies al ancho de los hombros.",
+        "Baja llevando la cadera atrás y las rodillas hacia afuera, con la espalda recta.",
+        "Baja hasta que los muslos queden paralelos al suelo, o hasta donde tu movilidad te deje sin redondear la espalda baja.",
+        "Empuja el suelo con todo el pie para subir hasta quedar de pie."
+      ],
+      "pasosEn": [
+        "Set the bar on your upper back, unrack it, and step back with feet shoulder-width apart.",
+        "Descend by pushing hips back and knees out, back straight.",
+        "Go down until thighs are parallel to the floor, or as far as your mobility allows without rounding your lower back.",
+        "Push through your whole foot to stand up."
+      ],
+      "imagenes": [
+        "Barbell_Squat/0.jpg",
+        "Barbell_Squat/1.jpg"
+      ]
+    },
+    "sentadilla-frontal": {
+      "refId": "Front_Barbell_Squat",
+      "equipo": "Barra frontal en rack",
+      "equipoEn": "Front barbell in rack",
+      "principales": [
+        "quadriceps"
+      ],
+      "secundarios": [
+        "calves",
+        "glutes",
+        "hamstrings"
+      ],
+      "pasos": [
+        "Apoya la barra sobre los hombros por delante, con los codos arriba y paralelos al suelo.",
+        "Párate con los pies al ancho de los hombros.",
+        "Baja con el torso erguido y las rodillas hacia afuera, hasta que los muslos queden paralelos al suelo.",
+        "Empuja el suelo para subir, manteniendo los codos arriba."
+      ],
+      "pasosEn": [
+        "Rest the bar on the front of your shoulders, elbows up and parallel to the floor.",
+        "Stand with feet shoulder-width apart.",
+        "Descend with an upright torso and knees out until thighs are parallel to the floor.",
+        "Push the floor away to stand, keeping your elbows up."
+      ],
+      "imagenes": [
+        "Front_Barbell_Squat/0.jpg",
+        "Front_Barbell_Squat/1.jpg"
+      ]
+    },
+    "prensa": {
+      "refId": "Leg_Press",
+      "equipo": "Máquina de prensa de piernas",
+      "equipoEn": "Leg press machine",
+      "principales": [
+        "quadriceps"
+      ],
+      "secundarios": [
+        "calves",
+        "glutes",
+        "hamstrings"
+      ],
+      "pasos": [
+        "Siéntate con la espalda apoyada y los pies en la plataforma, al ancho de los hombros.",
+        "Empuja la plataforma hasta estirar las piernas sin trabar las rodillas y suelta los seguros.",
+        "Baja despacio doblando las rodillas hasta unos 90 grados, sin que la cadera ni la zona lumbar se despeguen del asiento.",
+        "Empuja con los talones para volver arriba."
+      ],
+      "pasosEn": [
+        "Sit with your back supported and feet on the platform, shoulder-width apart.",
+        "Press the platform until legs are straight without locking your knees, then release the safeties.",
+        "Lower slowly to about 90 degrees, keeping hips and lower back flat on the seat.",
+        "Push through your heels to return up."
+      ],
+      "imagenes": [
+        "Leg_Press/0.jpg",
+        "Leg_Press/1.jpg"
+      ]
+    },
+    "extension-cuadriceps": {
+      "refId": "Leg_Extensions",
+      "equipo": "Máquina de extensión de piernas",
+      "equipoEn": "Leg extension machine",
+      "principales": [
+        "quadriceps"
+      ],
+      "secundarios": [],
+      "pasos": [
+        "Ajusta el respaldo para que tus rodillas queden en el borde del asiento y el rodillo sobre los tobillos.",
+        "Toma las manijas y siéntate con la espalda apoyada.",
+        "Estira las piernas casi por completo, sin trabar las rodillas, y aprieta el cuádriceps.",
+        "Baja despacio hasta unos 90 grados, sin dejar caer la pila de pesas."
+      ],
+      "pasosEn": [
+        "Adjust the backrest so your knees are at the seat edge and the pad sits over your ankles.",
+        "Grip the handles and sit with your back supported.",
+        "Extend your legs almost fully, without locking your knees, and squeeze your quads.",
+        "Lower slowly to about 90 degrees, without dropping the weight stack."
+      ],
+      "imagenes": [
+        "Leg_Extensions/0.jpg",
+        "Leg_Extensions/1.jpg"
+      ]
+    },
+    "zancadas": {
+      "refId": "Dumbbell_Lunges",
+      "equipo": "Mancuernas",
+      "equipoEn": "Dumbbells",
+      "principales": [
+        "quadriceps"
+      ],
+      "secundarios": [
+        "calves",
+        "glutes",
+        "hamstrings"
+      ],
+      "pasos": [
+        "Párate con una mancuerna en cada mano a los lados y la espalda recta.",
+        "Da un paso largo al frente y baja doblando ambas rodillas hasta unos 90 grados.",
+        "Mantén el torso erguido y la rodilla delantera sobre el pie.",
+        "Empuja con el pie delantero para volver al inicio y repite con la otra pierna."
+      ],
+      "pasosEn": [
+        "Stand with a dumbbell in each hand at your sides and a straight back.",
+        "Take a long step forward and lower by bending both knees to about 90 degrees.",
+        "Keep your torso upright and the front knee over your foot.",
+        "Push through the front foot to return to the start and repeat on the other leg."
+      ],
+      "imagenes": [
+        "Dumbbell_Lunges/0.jpg",
+        "Dumbbell_Lunges/1.jpg"
+      ]
+    },
+    "prensa-horizontal": {
+      "refId": "Leg_Press",
+      "equipo": "Máquina de prensa horizontal",
+      "equipoEn": "Horizontal leg press machine",
+      "principales": [
+        "quadriceps"
+      ],
+      "secundarios": [
+        "calves",
+        "glutes",
+        "hamstrings"
+      ],
+      "pasos": [
+        "Ajusta el asiento y siéntate con la espalda apoyada y los pies en la plataforma, al ancho de los hombros.",
+        "Empuja la plataforma hasta estirar las piernas sin trabar las rodillas.",
+        "Baja despacio doblando las rodillas hasta unos 90 grados.",
+        "Empuja con los talones para volver, sin despegar la cadera del asiento."
+      ],
+      "pasosEn": [
+        "Adjust the seat and sit with your back supported and feet on the platform, shoulder-width apart.",
+        "Press the platform until legs are straight without locking your knees.",
+        "Lower slowly, bending your knees to about 90 degrees.",
+        "Push through your heels to return, keeping hips on the seat."
+      ],
+      "imagenes": [
+        "Leg_Press/0.jpg",
+        "Leg_Press/1.jpg"
+      ],
+      "aproximada": true
+    },
+    "peso-muerto-rumano": {
+      "refId": "Romanian_Deadlift",
+      "equipo": "Barra",
+      "equipoEn": "Barbell",
+      "principales": [
+        "hamstrings"
+      ],
+      "secundarios": [
+        "calves",
+        "glutes",
+        "lower back"
+      ],
+      "pasos": [
+        "Párate con la barra frente a los muslos, pies al ancho de la cadera y rodillas ligeramente flexionadas.",
+        "Lleva la cadera hacia atrás y baja la barra pegada a las piernas, con la espalda recta.",
+        "Baja hasta sentir el estiramiento en la parte trasera del muslo, sin redondear la espalda.",
+        "Empuja la cadera hacia adelante para subir y aprieta los glúteos."
+      ],
+      "pasosEn": [
+        "Stand with the bar in front of your thighs, feet hip-width apart and knees slightly bent.",
+        "Push your hips back and lower the bar close to your legs, back straight.",
+        "Lower until you feel a stretch in your hamstrings, without rounding your back.",
+        "Drive your hips forward to stand and squeeze your glutes."
+      ],
+      "imagenes": [
+        "Romanian_Deadlift/0.jpg",
+        "Romanian_Deadlift/1.jpg"
+      ]
+    },
+    "curl-femoral": {
+      "refId": "Lying_Leg_Curls",
+      "equipo": "Máquina de curl femoral acostado",
+      "equipoEn": "Lying leg curl machine",
+      "principales": [
+        "hamstrings"
+      ],
+      "secundarios": [],
+      "pasos": [
+        "Acuéstate boca abajo en la máquina con el rodillo sobre la parte baja de las pantorrillas.",
+        "Toma las manijas y mantén la cadera pegada al banco.",
+        "Dobla las rodillas llevando los talones hacia los glúteos.",
+        "Baja despacio hasta estirar las piernas."
+      ],
+      "pasosEn": [
+        "Lie face down on the machine with the pad over your lower calves.",
+        "Grip the handles and keep your hips pressed to the bench.",
+        "Bend your knees, bringing your heels toward your glutes.",
+        "Lower slowly until legs are straight."
+      ],
+      "imagenes": [
+        "Lying_Leg_Curls/0.jpg",
+        "Lying_Leg_Curls/1.jpg"
+      ]
+    },
+    "curl-femoral-sentado": {
+      "refId": "Seated_Leg_Curl",
+      "equipo": "Máquina de curl femoral sentado",
+      "equipoEn": "Seated leg curl machine",
+      "principales": [
+        "hamstrings"
+      ],
+      "secundarios": [],
+      "pasos": [
+        "Ajusta el respaldo y siéntate con el rodillo sobre la parte baja de las pantorrillas.",
+        "Baja el cojín de los muslos para que te sujete en su lugar.",
+        "Dobla las rodillas llevando los talones hacia abajo y atrás.",
+        "Regresa despacio hasta estirar las piernas, sin dejar caer la pila de pesas."
+      ],
+      "pasosEn": [
+        "Adjust the backrest and sit with the pad over your lower calves.",
+        "Lower the thigh pad so it holds you in place.",
+        "Bend your knees, bringing your heels down and back.",
+        "Return slowly until legs are straight, without dropping the weight stack."
+      ],
+      "imagenes": [
+        "Seated_Leg_Curl/0.jpg",
+        "Seated_Leg_Curl/1.jpg"
+      ]
+    },
+    "hip-thrust": {
+      "refId": "Barbell_Hip_Thrust",
+      "equipo": "Barra con banco",
+      "equipoEn": "Barbell with bench",
+      "principales": [
+        "glutes"
+      ],
+      "secundarios": [
+        "calves",
+        "hamstrings"
+      ],
+      "pasos": [
+        "Siéntate en el suelo con la parte alta de la espalda apoyada en el banco y la barra sobre la cadera, con un cojín.",
+        "Apoya los pies en el suelo, al ancho de la cadera, con las rodillas dobladas.",
+        "Empuja con los talones y sube la cadera hasta alinear rodillas, cadera y hombros.",
+        "Aprieta los glúteos arriba y baja despacio."
+      ],
+      "pasosEn": [
+        "Sit on the floor with your upper back against the bench and the barbell over your hips, with a pad.",
+        "Plant your feet hip-width apart with knees bent.",
+        "Drive through your heels and lift your hips until knees, hips and shoulders line up.",
+        "Squeeze your glutes at the top and lower slowly."
+      ],
+      "imagenes": [
+        "Barbell_Hip_Thrust/0.jpg",
+        "Barbell_Hip_Thrust/1.jpg"
+      ]
+    },
+    "patada-gluteo-polea": {
+      "refId": "One-Legged_Cable_Kickback",
+      "equipo": "Polea baja con tobillera",
+      "equipoEn": "Low cable with ankle strap",
+      "principales": [
+        "glutes"
+      ],
+      "secundarios": [
+        "hamstrings"
+      ],
+      "pasos": [
+        "Sujeta la tobillera a un tobillo y engánchala a la polea baja.",
+        "Apóyate en la máquina con las manos, mirando hacia ella y con el abdomen firme.",
+        "Lleva la pierna atrás, estirándola, y aprieta el glúteo arriba.",
+        "Regresa despacio, sin arquear la espalda baja, y repite del otro lado."
+      ],
+      "pasosEn": [
+        "Attach the ankle strap to one ankle and clip it to the low pulley.",
+        "Hold the machine with your hands, facing it, with your abs braced.",
+        "Kick your leg back, straightening it, and squeeze your glute at the top.",
+        "Return slowly, without arching your lower back, and repeat on the other side."
+      ],
+      "imagenes": [
+        "One-Legged_Cable_Kickback/0.jpg",
+        "One-Legged_Cable_Kickback/1.jpg"
+      ]
+    },
+    "abduccion-cadera": {
+      "refId": "Thigh_Abductor",
+      "equipo": "Máquina de abducción de cadera",
+      "equipoEn": "Hip abduction machine",
+      "principales": [
+        "abductors"
+      ],
+      "secundarios": [
+        "glutes"
+      ],
+      "pasos": [
+        "Ajusta los cojines y siéntate con la espalda apoyada, con las piernas juntas y los cojines por fuera de las rodillas.",
+        "Ajusta el tope de apertura para que las piernas no se abran más de lo cómodo.",
+        "Toma las manijas y mantén el torso quieto.",
+        "Abre las piernas empujando los cojines hacia afuera y aprieta los glúteos.",
+        "Regresa despacio, sin dejar que la pila de pesas caiga."
+      ],
+      "pasosEn": [
+        "Adjust the pads and sit with your back supported, legs together and pads outside your knees.",
+        "Set the range stop so your legs do not open past a comfortable point.",
+        "Grip the handles and keep your torso still.",
+        "Open your legs by pushing the pads outward and squeeze your glutes.",
+        "Return slowly, without letting the weight stack drop."
+      ],
+      "imagenes": [
+        "Thigh_Abductor/0.jpg",
+        "Thigh_Abductor/1.jpg"
+      ]
+    },
+    "hiperextension-inversa": {
+      "refId": "Reverse_Hyperextension",
+      "equipo": "Máquina de hiperextensión inversa",
+      "equipoEn": "Reverse hyperextension machine",
+      "principales": [
+        "glutes"
+      ],
+      "secundarios": [
+        "hamstrings",
+        "lower back"
+      ],
+      "pasos": [
+        "Acuéstate boca abajo en la máquina con la cadera en el borde y las manos en las manijas.",
+        "Coloca los pies entre los rodillos o cojines.",
+        "Sube las piernas hacia atrás estirando la cadera, sin llevarlas más arriba de la línea del cuerpo.",
+        "Baja despacio y controla el movimiento, sin balancearte."
+      ],
+      "pasosEn": [
+        "Lie face down on the machine with your hips at the edge and hands on the handles.",
+        "Place your feet between the rollers or pads.",
+        "Raise your legs back by extending your hips, no higher than your body line.",
+        "Lower slowly and stay in control, without swinging."
+      ],
+      "imagenes": [
+        "Reverse_Hyperextension/0.jpg",
+        "Reverse_Hyperextension/1.jpg"
+      ]
+    },
+    "aduccion-cadera": {
+      "refId": "Thigh_Adductor",
+      "equipo": "Máquina de aducción de cadera",
+      "equipoEn": "Hip adduction machine",
+      "principales": [
+        "adductors"
+      ],
+      "secundarios": [],
+      "pasos": [
+        "Ajusta los cojines y siéntate con la espalda apoyada, con las piernas abiertas y los cojines por dentro de las rodillas.",
+        "Ajusta el tope de apertura para no estirar de más la ingle.",
+        "Toma las manijas y mantén el torso quieto.",
+        "Junta las piernas apretando los cojines con la parte interna del muslo.",
+        "Regresa despacio hasta abrir las piernas, sin dejar caer la pila de pesas."
+      ],
+      "pasosEn": [
+        "Adjust the pads and sit with your back supported, legs apart and pads inside your knees.",
+        "Set the range stop so you do not overstretch your groin.",
+        "Grip the handles and keep your torso still.",
+        "Bring your legs together, squeezing the pads with your inner thighs.",
+        "Return slowly to open your legs, without dropping the weight stack."
+      ],
+      "imagenes": [
+        "Thigh_Adductor/0.jpg",
+        "Thigh_Adductor/1.jpg"
+      ]
+    },
+    "elevacion-talones-pie": {
+      "refId": "Standing_Barbell_Calf_Raise",
+      "equipo": "Barra de pie",
+      "equipoEn": "Standing barbell",
+      "principales": [
+        "calves"
+      ],
+      "secundarios": [],
+      "pasos": [
+        "Coloca la barra sobre la parte alta de la espalda y párate con los pies al ancho de la cadera.",
+        "Si puedes, apoya la punta de los pies en una plataforma baja.",
+        "Sube los talones lo más alto posible, apretando las pantorrillas arriba.",
+        "Baja despacio hasta sentir el estiramiento, con las rodillas casi estiradas."
+      ],
+      "pasosEn": [
+        "Set the bar on your upper back and stand with feet hip-width apart.",
+        "If you can, rest your toes on a low platform.",
+        "Raise your heels as high as possible, squeezing your calves at the top.",
+        "Lower slowly until you feel a stretch, keeping knees almost straight."
+      ],
+      "imagenes": [
+        "Standing_Barbell_Calf_Raise/0.jpg",
+        "Standing_Barbell_Calf_Raise/1.jpg"
+      ]
+    },
+    "elevacion-talones-sentado": {
+      "refId": "Seated_Calf_Raise",
+      "equipo": "Máquina de pantorrillas sentado",
+      "equipoEn": "Seated calf raise machine",
+      "principales": [
+        "calves"
+      ],
+      "secundarios": [],
+      "pasos": [
+        "Siéntate en la máquina con la punta de los pies en la plataforma y los muslos bajo el cojín.",
+        "Suelta el seguro y deja bajar los talones hasta sentir el estiramiento.",
+        "Sube los talones lo más alto posible, apretando las pantorrillas.",
+        "Baja despacio, sin rebotar."
+      ],
+      "pasosEn": [
+        "Sit on the machine with your toes on the platform and thighs under the pad.",
+        "Release the safety and let your heels drop until you feel a stretch.",
+        "Raise your heels as high as possible, squeezing your calves.",
+        "Lower slowly, without bouncing."
+      ],
+      "imagenes": [
+        "Seated_Calf_Raise/0.jpg",
+        "Seated_Calf_Raise/1.jpg"
+      ]
+    },
+    "elevacion-talones-maquina": {
+      "refId": "Calf_Press_On_The_Leg_Press_Machine",
+      "equipo": "Máquina de prensa de piernas (pantorrillas)",
+      "equipoEn": "Leg press machine (calf raise)",
+      "principales": [
+        "calves"
+      ],
+      "secundarios": [],
+      "pasos": [
+        "Siéntate en la prensa y apoya la punta de los pies en la parte baja de la plataforma, al ancho de los hombros.",
+        "Estira las piernas sin trabar las rodillas y suelta los seguros.",
+        "Empuja con la punta de los pies para subir los talones lo más alto posible.",
+        "Baja despacio hasta sentir el estiramiento, manteniendo las rodillas quietas."
+      ],
+      "pasosEn": [
+        "Sit in the press and place your toes on the lower part of the platform, shoulder-width apart.",
+        "Straighten your legs without locking your knees and release the safeties.",
+        "Push through your toes to raise your heels as high as possible.",
+        "Lower slowly until you feel a stretch, keeping your knees still."
+      ],
+      "imagenes": [
+        "Calf_Press_On_The_Leg_Press_Machine/0.jpg",
+        "Calf_Press_On_The_Leg_Press_Machine/1.jpg"
+      ]
+    },
+    "rueda-abdominal": {
+      "refId": "Ab_Roller",
+      "equipo": "Rueda abdominal",
+      "equipoEn": "Ab wheel",
+      "principales": [
+        "abdominals"
+      ],
+      "secundarios": [
+        "shoulders"
+      ],
+      "pasos": [
+        "Arrodíllate en el suelo y toma la rueda con ambas manos, justo bajo los hombros.",
+        "Aprieta el abdomen y rueda hacia adelante, estirando el cuerpo sin hundir la espalda baja.",
+        "Avanza hasta donde puedas mantener la espalda recta.",
+        "Regresa a la posición inicial contrayendo el abdomen."
+      ],
+      "pasosEn": [
+        "Kneel on the floor and grip the wheel with both hands, right under your shoulders.",
+        "Brace your abs and roll forward, stretching out without sagging your lower back.",
+        "Go only as far as you can keep your back straight.",
+        "Return to the start by contracting your abs."
+      ],
+      "imagenes": [
+        "Ab_Roller/0.jpg",
+        "Ab_Roller/1.jpg"
+      ]
+    },
+    "crunch-polea": {
+      "refId": "Cable_Crunch",
+      "equipo": "Polea alta con cuerda",
+      "equipoEn": "High cable with rope",
+      "principales": [
+        "abdominals"
+      ],
+      "secundarios": [],
+      "pasos": [
+        "Arrodíllate frente a la polea alta y sujeta la cuerda a los lados de la cabeza.",
+        "Mantén la cadera quieta y la espalda ligeramente redondeada.",
+        "Flexiona el torso hacia el suelo llevando los codos hacia las rodillas, y aprieta el abdomen.",
+        "Sube despacio hasta la posición inicial."
+      ],
+      "pasosEn": [
+        "Kneel facing the high pulley and hold the rope beside your head.",
+        "Keep your hips still and your back slightly rounded.",
+        "Curl your torso toward the floor, elbows toward knees, and squeeze your abs.",
+        "Rise slowly to the starting position."
+      ],
+      "imagenes": [
+        "Cable_Crunch/0.jpg",
+        "Cable_Crunch/1.jpg"
+      ]
+    },
+    "crunch-maquina": {
+      "refId": "Ab_Crunch_Machine",
+      "equipo": "Máquina de abdominales",
+      "equipoEn": "Ab crunch machine",
+      "principales": [
+        "abdominals"
+      ],
+      "secundarios": [],
+      "pasos": [
+        "Ajusta el asiento y siéntate con los pies bajo los rodillos y las manos en las manijas.",
+        "Empieza con el torso erguido y el abdomen firme.",
+        "Flexiona el torso hacia adelante aproximando el pecho a las rodillas y aprieta el abdomen.",
+        "Regresa despacio, sin dejar caer la pila de pesas."
+      ],
+      "pasosEn": [
+        "Adjust the seat and sit with feet under the rollers and hands on the handles.",
+        "Start with an upright torso and firm abs.",
+        "Curl your torso forward, bringing chest toward knees, and squeeze your abs.",
+        "Return slowly, without dropping the weight stack."
+      ],
+      "imagenes": [
+        "Ab_Crunch_Machine/0.jpg",
+        "Ab_Crunch_Machine/1.jpg"
+      ]
+    },
+    "elevacion-piernas-colgado": {
+      "refId": "Hanging_Leg_Raise",
+      "equipo": "Barra de dominadas",
+      "equipoEn": "Pull-up bar",
+      "principales": [
+        "abdominals"
+      ],
+      "secundarios": [],
+      "pasos": [
+        "Cuélgate de la barra con los brazos estirados y el cuerpo quieto.",
+        "Aprieta el abdomen y sube las piernas hasta la altura de la cadera; dóblalas si es muy difícil.",
+        "Haz una pausa corta arriba, sin balancearte.",
+        "Baja despacio, controlando el movimiento."
+      ],
+      "pasosEn": [
+        "Hang from the bar with arms straight and your body still.",
+        "Brace your abs and raise your legs to hip height; bend them if it is too hard.",
+        "Pause briefly at the top, without swinging.",
+        "Lower slowly, staying in control."
+      ],
+      "imagenes": [
+        "Hanging_Leg_Raise/0.jpg",
+        "Hanging_Leg_Raise/1.jpg"
+      ]
+    }
+  }
+}

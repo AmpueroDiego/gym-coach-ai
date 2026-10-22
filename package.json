@@ -1,0 +1,20 @@
+{
+  "name": "gym-coach",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -k -n api,swa \"npm run api\" \"swa start\"",
+    "api": "cd api && func start",
+    "build": "npm --prefix app run build && dotnet build api/Api.csproj",
+    "test": "npm --prefix app test && dotnet test api.Tests/Api.Tests.csproj",
+    "lint": "npm --prefix app run lint",
+    "init-cosmos": "dotnet run herramientas/init-cosmos.cs"
+  },
+  "devDependencies": {
+    "@azure/static-web-apps-cli": "^2.0.10",
+    "azure-functions-core-tools": "^4.15.2",
+    "concurrently": "^10.0.5"
+  },
+  "allowScripts": {
+    "azure-functions-core-tools@4.15.2": true
+  }
+}
