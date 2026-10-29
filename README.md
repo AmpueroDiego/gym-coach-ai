@@ -1,16 +1,77 @@
-# gym-coach
+# gym-coach 🏋️
 
-App de gym (PWA) para registrar entrenos, con un coach de IA que analiza tu historial real, te recomienda y conversa contigo.
+**App de gimnasio (PWA) con un coach de IA que te recomienda con *tus* números, no con consejos genéricos.**
 
-- **Frontend**: React + TypeScript, PWA (`app/`)
-- **Backend**: Azure Functions .NET 10 isolated, API gestionada de Static Web Apps (`api/`)
-- **Datos**: Azure Cosmos DB (free tier)
-- **Auth**: Google Sign-In (ID token validado en la API)
-- **Coach**: Azure OpenAI (Foundry) con function calling hoy; después agente, servidor MCP y RAG en Azure AI Search
+> "Subiste 7.5 kg en banca en 6 semanas, pero tu volumen de espalda bajó." — en vez de "recuerda entrenar espalda".
 
-Estado: etapa 2, el primer coach (chat con el modelo mini y herramientas sobre tus datos). La etapa 1, registrar entrenos, ya está.
+Registras tus series desde el celular, con una mano y entre series. El coach es un agente de **Microsoft Foundry** que consulta tu historial real con herramientas (function calling) y conversa contigo. Todo corre en Azure con capas gratuitas o de pago por uso: cuesta centavos al mes.
 
-## Estructura
+## ✨ Qué hace
+
+- **Registrar entrenos rápido**: series en 1–3 toques, temporizador de descanso, tipos de serie (calentamiento, fallo, drop), rutinas y funciona sin conexión (reenvía al volver la red).
+- **Progreso y récords**: récords por ejercicio (peso máximo, e1RM con Epley, repeticiones), gráficos de volumen y mapa muscular.
+- **Coach de IA con datos reales**: el agente llama a herramientas como `ver_entrenos_recientes`, `progreso`, `volumen_por_grupo` o `proponer_rutina`. **No inventa números**: todo dato que dice sale de una herramienta.
+- **Plan del día**: cada mañana, "Tu entreno de hoy" según tus hábitos, tu equipo y tu tiempo disponible.
+- **Memoria de conversación**: una conversación de Foundry por usuario y por día.
+- **Importar desde Hevy** (CSV) para no empezar de cero.
+- **Español / inglés**, kg / lb.
+
+## 🧱 Arquitectura
+
+```mermaid
+flowchart LR
+    U[📱 PWA React + TS] -->|cookie de sesión| API[Azure Functions .NET 10<br/>API gestionada de SWA]
+    U -->|Google Sign-In| G[Google Identity]
+    API -->|valida ID token| G
+    API -->|partición /userId| DB[(Azure Cosmos DB<br/>free tier)]
+    API -->|Responses API| AG[Agente gym-coach<br/>Microsoft Foundry Agent Service]
+    AG -->|function calls| API
+    AG --- M[Azure OpenAI<br/>gpt-5-mini]
+```
+
+- El navegador **nunca** habla con Foundry: la API hace de puente y ejecuta las herramientas con el `userId` del token. El modelo nunca ve ni elige el usuario.
+- Si el agente falla en un turno, responde un bucle de function calling propio (respaldo) y, si también falla, la PWA muestra un mensaje amable.
+
+## 🛠️ Tecnologías
+
+| Capa | Tecnologías |
+|---|---|
+| **Frontend** | React 19, TypeScript 6, Vite 8, PWA (`vite-plugin-pwa`, service worker, modo offline), Chart.js, react-body-highlighter |
+| **Backend** | Azure Functions (.NET 10, worker *isolated*), C#, API gestionada de Azure Static Web Apps |
+| **Datos** | Azure Cosmos DB for NoSQL (free tier, partición `/userId`, control de concurrencia con ETag) |
+| **IA** | Microsoft Foundry: Agent Service + Azure OpenAI (`gpt-5-mini`), function calling, SDK `OpenAI` para .NET |
+| **Auth y seguridad** | Google Sign-In (OIDC, validación del ID token en el backend), cookie de sesión firmada (HMAC), CSP y headers de seguridad, límites por usuario (429 + `Retry-After`), validación en el servidor |
+| **Calidad** | xUnit v3 (unitarias + integración contra el emulador de Cosmos), Vitest, oxlint, 23 casos de evaluación del coach |
+| **Infra y DevOps** | Azure Static Web Apps (Free), GitHub Actions (CI/CD), Azure CLI, Azure Identity, SWA CLI, Azure Functions Core Tools |
+| **Desarrollo con IA** | Claude Code con agentes propios (planner → coder → qa → adversary) |
+
+## 🗺️ Roadmap
+
+| Etapa | Estado |
+|---|---|
+| 1. Registrar entrenos (sin IA) | ✅ |
+| 2. Coach con modelo mini + function calling | ✅ |
+| 3. Coach como agente en Foundry Agent Service | 🚧 actual |
+| 4. Herramientas como servidor MCP (también desde Claude Desktop) | ⏳ |
+| 5. RAG con Foundry IQ / Azure AI Search (guías y notas) | ⏳ |
+| 6. Seguridad y gobierno completos | ⏳ |
+| 7. Evaluación del coach | ⏳ |
+
+Detalle, costos y criterio de "listo" de cada etapa: [`docs/roadmap.md`](docs/roadmap.md). Lecciones aprendidas: [`docs/playbook.md`](docs/playbook.md).
+
+## 💸 Barato primero
+
+| Recurso | Capa | Costo |
+|---|---|---|
+| Azure Static Web Apps + Functions | Free | 0 USD |
+| Azure Cosmos DB | Free tier (400 RU/s) | 0 USD |
+| Azure OpenAI (`gpt-5-mini`) | Pago por token | Centavos / mes |
+
+---
+
+## 🧑‍💻 Guía de desarrollo
+
+### Estructura
 
 | Carpeta | Qué hay |
 |---|---|
@@ -89,7 +150,10 @@ COSMOS_ENDPOINT=https://localhost:8081 dotnet test api.Tests/Api.Tests.csproj
 
 Crean una base `gymcoach-pruebas-*` temporal y la borran al terminar.
 
-### Coach (etapa 2)
+### Coach (etapas 2 y 3)
+
+Con `COACH_MOTOR=agente` y `FOUNDRY_PROJECT_ENDPOINT` responde el agente `gym-coach` de Foundry (se publica con `dotnet run --project herramientas/SincronizarAgente`, autenticado con `az login`); con `COACH_MOTOR=bucle` responde el bucle de function calling descrito abajo, que también es el respaldo del agente.
+
 
 `POST /api/coach` corre el bucle de function calling: el modelo (`gpt-5-mini`, deployment `coach-mini` en la cuenta `aif-gym-coach-diego`, `eastus2`) llama a `ver_entrenos_recientes`, `progreso`, `volumen_por_grupo`, `mis_ejercicios`, `recordar` y `proponer_rutina` (6 herramientas). El `userId` lo pone el backend; el modelo nunca lo ve ni lo elige. El perfil (minutos, objetivo, equipo, notas) vive en `GET/PUT /api/coach/perfil`; el perfil de entrenamiento calculado, en `GET /api/perfil-entrenamiento?hoy=YYYY-MM-DD&offsetMin=-360`. En la PWA es la pestaña **Coach**; la asesoría de las 7:30 es un mensaje automático "Tu entreno de hoy" (hora fija, sin push por ahora).
 
